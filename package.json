@@ -1,0 +1,28 @@
+{ 
+  "name": "FeedMailApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mefjuszkov/Chmura"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mefjuszkov/Chmura/issues"
+  },
+  "homepage": "https://github.com/Mefjuszkov/Chmura#readme",
+  "dependencies": {
+    "@koa/router": "^8.0.8",
+    "azure-storage": "^2.10.3",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-static": "^5.0.0",
+    "uuid": "^8.1.0"
+  }
+}
