@@ -1,20 +1,37 @@
 {
   "name": "Chmura",
   "version": "1.0.0",
-  "private": true,
+  "description": "",
+  "main": "main.js",
   "scripts": {
-    "start": "node server/index.js"
+    "test": "cross-env NODE_ENV=development jest",
+    "start": "node ./main.js",
+    "start:dev": "cross-env NODE_ENV=development node ./main.js",
+    "start:pro": "cross-env NODE_ENV=production node ./main.js",
+    "start:watch": "nodemon cross-env NODE_ENV=development ./main.js"
   },
+  "author": "",
+  "license": "MIT",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "koa": "^2.13.1",
-    "koa-bodyparser": "^2.5.0",
-    "koa-favicon": "^2.1.0",
-    "koa-static": "^5.0.0",
-    "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
+    "@sendgrid/mail": "^6.5.4",
+    "config": "^3.3.0",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "jsonschema": "^1.2.5",
+    "mailgun-js": "^0.22.0",
+    "mjml": "^4.6.2",
+    "mongodb": "^3.6.5",
+    "rss-parser": "^3.7.5",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.2.1"
   }
 }
